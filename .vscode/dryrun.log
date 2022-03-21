@@ -1,4 +1,0 @@
-make: Entering directory 'd:/projects/clean-architecture-implementation-golang'
-go build -o main.go
-make: Leaving directory 'd:/projects/clean-architecture-implementation-golang'
- 
