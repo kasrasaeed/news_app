@@ -19,5 +19,8 @@ func (*muxRouter) Get(uri string, f func(w http.ResponseWriter, r *http.Request)
 }
 
 func (*muxRouter) Serve(port string) {
-	http.ListenAndServe(port, muxRouterInstance)
+	err := http.ListenAndServe(port, muxRouterInstance)
+	if err != nil {
+		return
+	}
 }

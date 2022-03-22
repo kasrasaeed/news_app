@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/kasrasaeed/clean-architecture-implementation-golang/entity"
+import "github.com/kasrasaeed/news_app/entity"
 
 type userRepository struct {
 	Repository
