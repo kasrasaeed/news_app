@@ -22,14 +22,14 @@ func NewNews(author, content, description, tag, title string, id uint32) (*News,
 		Tag:         tag,
 		Title:       title,
 	}
-	err := news.validate()
+	err := news.Validate()
 	if err != nil {
 		return nil, err
 	}
 	return news, nil
 }
 
-func (n *News) validate() error {
+func (n *News) Validate() error {
 	if n.Content == "" ||
 		n.Author == "" ||
 		n.Description == "" ||
