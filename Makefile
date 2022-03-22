@@ -14,7 +14,3 @@ tidy:
 init:
 	go mod init $(module-name)
 
-get:
-	go get
-
-
