@@ -7,12 +7,12 @@ import (
 )
 
 type User struct {
-	CreatedDate time.Time
 	Id          id.UUID
-	LastVisit   time.Time
+	UserName    string
 	PassWord    string
 	Role        string
-	UserName    string
+	LastVisit   time.Time
+	CreatedDate time.Time
 	UpdatedAt   time.Time
 }
 
