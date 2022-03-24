@@ -7,7 +7,7 @@ import (
 
 type UseCase interface {
 	GetUser(id id.UUID) (*entity.User, error)
-	SearchUser(query string) ([]*entity.User, error)
+	GetUserByName(name string) (*entity.User, error)
 	ListUsers() ([]*entity.User, error)
 	CreateUser(username, password, role string) (id.UUID, error)
 	UpdateUser(e *entity.User) error

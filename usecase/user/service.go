@@ -30,8 +30,8 @@ func (s *Service) GetUser(id id.UUID) (*entity.User, error) {
 	return s.repo.GetById(id)
 }
 
-func (s *Service) SearchUser(query string) ([]*entity.User, error) {
-	return s.repo.Search(strings.ToLower(query))
+func (s *Service) GetUserByName(name string) (*entity.User, error) {
+	return s.repo.GetByName(strings.ToLower(name))
 }
 
 func (s *Service) ListUsers() ([]*entity.User, error) {

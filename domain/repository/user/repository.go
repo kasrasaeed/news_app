@@ -7,7 +7,7 @@ import (
 
 type Reader interface {
 	GetById(id id.UUID) (*entity.User, error)
-	Search(query string) ([]*entity.User, error)
+	GetByName(name string) (*entity.User, error)
 	GetAll() ([]*entity.User, error)
 }
 
